@@ -1,0 +1,16 @@
+h2 {
+  font-family: Courier New;
+  color: navy;
+}
+
+b {
+  color: red;
+}
+
+#myinfo {
+  color: blue;
+}
+
+#description {
+  border: 1px solid black;
+}
