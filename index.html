@@ -77,3 +77,32 @@
 <a style="position:fixed;top:1px;right:1px;" href="http://joanne-chang.github.io" 
    title="Viewer Counter, testing"><img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1434850626/style=5/counter.png" border="0"></a>
 <!-- Online Counter ends -->
+
+
+<!-- Password Protect testing only -->
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please enter password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "testing123") {
+alert('wow this actually works =o');
+window.open('joanne-chang.github.io/');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied !!! D=< Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</script>
+<center>
+<form>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</form>
+</center>
