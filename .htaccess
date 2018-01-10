@@ -1,0 +1,5 @@
+AuthName "This section of the site requires a password (found on resume)."
+AuthType Basic
+AuthUserFile /customers/3/c/c/joanne-chang.github.io/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user
