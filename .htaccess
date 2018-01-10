@@ -1,4 +1,0 @@
-AuthName "This section of the site requires a password (found on resume)."
-AuthType Basic
-AuthUserFile Joanne-Chang.github.io/.htpasswd
-Require valid-user
