@@ -1,133 +1,102 @@
-<!-- Definitely still editing this!! for who knows how long -->
-<link rel="stylesheet" type="text/css" href="/css/main.css">
+<!-- credit @Joanne-Chang on GitHub -->
+<!-- If you use this code, please don't remove the credits! -->
 
-<!-- Favicon -->
-<link rel="icon" href="/pictures/favicon.ico">
-<!-- Favicon ends -->
-
-<title>Joanne Chang</title>
-
-<!-- Header begins-->
-<center>
-<div id="picture"><img id="profilepicture" src="/pictures/profilepicture.png"></div>
-<div id="myinfo"><h2>Joanne Chang</h2>
-  <br>
-  <div id="occupation">Student at University of California, Davis</div>
-  <div id="industry">Computer Science and Engineering Major</div>
-</div>
-<br>
-</center>
-<!-- Header ends -->
+<!DOCTYPE html>
+<html lang="en">
   
-
-<!-- Cursor -->
-<style>
-html, a:hover {cursor: url(https://raw.githubusercontent.com/Joanne-Chang/Joanne-Chang.github.io/master/pictures/cursor.png), auto;}
-</style>
-<!-- Cursor ends -->
-
-
-<!-- Style -->
-<link rel="index" href="/style/index.css">
-<link rel="fonts" href="/style/fonts.css">
-<!-- Style ends -->
-
-
-<!-- About Me begins -->
-<div id="description">
-  <b>About me:</b>
-      <br>
-    <p>Hi! I am a fourth year Computer Science and Engineering student at the University of California, Davis.</p>
-    <p>I am currently looking for any full time job opportunities following my graduation in June 2020. 
-      <br>
-    If you would like to know more about me, feel free to contact me!</p>
-</div>
-<!-- About Me ends -->
-
-
-<!-- TEMPORARY SECTION -->
-Check out the HackDavis 2018 project I worked on
-    <a title="HackDavis 2018 Project" href="https://devpost.com/software/project-eqm85f"> here</a>!
-<br><br>
-Too long, didn't read? Try it out:
-    <a title="Direct Link to Project" href="https://djts.github.io">djts.github.io</a>
-<br><br><br>
-<!-- TEMPORARY SECTION ENDS -->
-
-
-<!-- Navigation Bar begins-->
-<div class="navigate">
-  <br>
-    <a href="/about-me.html">About Me</a>
-  <br>
-    <a title="Printable Resume" href="/resume.pdf">Resume</a>
-  <br>
-    <a title="Portfolio" href="/portfolio.html">Portfolio</a>
-</div>
-<!-- Navigation Bar ends -->
-
-
-<!-- Footer begins -->
-<div id="contactTitle">
-  <br>
-    Contact Info
-  <br>
-    <a title="joachang@ucdavis.edu" href="mailto:joachang@ucdavis.edu">Email</a>
-  <br>
-    <a title="@joanne-chang" href="https://www.linkedin.com/in/joanne-chang">LinkedIn</a>
-  <br><br>
-    <a href="#myinfo">Go to top</a>
-</div>
-<!-- Footer ends -->
-
-
-
-<!-- MISC -->
-
-<!-- Credits Icon begins -->
-<div style="bottom:10px;right:10px;position:fixed;font-size:5px;">
-  <a href="https://jsfiddle.net/user/JoanneChang/">
-    <img title="did you notice me" height="10" src="https://pbs.twimg.com/profile_images/551774827/X-no-background-400_400x400.png"/>
-  </a>
-</div>
-<!-- Credits Icon ends -->
-
-
-<!-- Online Counter begins -->
-<a style="position:fixed;top:1px;right:1px;" href="http://joanne-chang.github.io" 
-   title="Viewer Counter, testing"><img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1434850626/style=5/counter.png" border="0"></a>
-<!-- Online Counter ends -->
-
-
+  <head>
+    <title>Welcome to my page!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet">
+<!--     <link rel="icon" href="/pictures/favicon.ico"> -->
+  </head>
   
-<!-- Password Protect testing only -->
-<script>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please enter password',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "testing123") {
-alert('wow this actually works =o');
-window.open('joanne-chang.github.io/');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied !!! D=< Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</script>
-<center>
-<form>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</form>
-</center>
+  <body>
+    
+    <header>
+      <div class="headerTitle">
+        <h1 class="headerName">Joanne Chang</h1>
+        <h2 class="headerMajor">Computer Science & Engineering @ UC Davis</h2>
+        <p id="warning"> (*Warning: This website is currently only desktop-friendly!) </p>
+      </div>
 
+      <div class="headerTabs" id="headerTabs">
+        <button id="aboutMeButton" class="tabButtons" onclick="window.location.href = '/';">About Me</button>
+        <button id="project1Button" class="tabButtons" onclick="window.location.href = '/project1.html';">Aggie Dish App</button>
+        <button id="project2Button" class="tabButtons" onclick="window.location.href = '/project2.html';">IFTTT to Twitter</button>
+        <button id="project3Button" class="tabButtons" onclick="window.location.href = '/project3.html';">Delivering Consequences</button>
+        <button id="resumeButton" class="tabButtons" onclick="window.location.href = '/resume.html';">Resume</button>
+      </div>
+    </header>
+    
+    <main>
+      <div class="pageWrap">
+        
+        <div class="pageDescription">
+          <p class="elevatorPitch">
+            <img id="profilePic" src="https://joanne-chang.github.io/images/profilePicture.jpg">
+            Hi! I'm Joanne. I recently graduated from the University of California, Davis with a B.S. degree 
+            in Computer Science and Engineering. <br><br>
+            I am currently looking for any full-time job opportunities in the Bay Area. (I'm open to any junior 
+            position or internship or anything similar!) 
+            My resume is available via the "Resume" tab above. 
+            Please feel free to contact me if you think I might be a good fit for any job openings!
+          </p>
 
-<!-- Testing section -->
-<iframe src="https://docs.google.com/document/d/1Xu6ETyzZq6VgxwNw2KwQP6YOyNVA76Au0FWkRhiMg8Q/edit?usp=sharing/pub?embedded=true"></iframe>
+          <div class="aboutMeSection">
+            <p class="aboutMe" id="aboutMeCS">
+              So why did I choose to study CS? When I first chose to do Computer Science as a major, part of the 
+              reason was because tech is everywhere. I wanted (and still do want!) to contribute to that - to make 
+              an impact on the world, however small. While I haven't settled into a specific field within CS yet, 
+              I am more than willing to try out different subtopics and always open to learning new things!
+            </p>
+            <p class="aboutMe" id="aboutMeIntro">
+              I'm guessing that if you're still reading this, then you want to get to know me as a person. Haha, okay. <br><br>
+              I'm a California native, born and raised in the South Bay Area. I've lived in three different Bay Area cities. 
+              Davis is the farthest I've ever moved to (and now I'm back in the Bay again). Some activities I enjoy doing in my 
+              downtime include gaming, playing table tennis, and sewing. Check out the captions of some of my pics here!
+            </p>
+            
+            <div class="hobbyImageSection">
+              <figure> 
+                <img id="hobby1Pic" class="hobbyImage" src="https://joanne-chang.github.io/images/hobbies/hobby1.jpg">
+                <figcaption id="hobby1PicCaption">Here's my Switch that I've spent too many hours playing the same game on.</figcaption>
+              </figure>
+              <figure> 
+                <img id="hobby2Pic" class="hobbyImage" src="https://joanne-chang.github.io/images/hobbies/hobby2.jpg">
+                <figcaption id="hobby2PicCaption">This is my favorite paddle to use when playing. It's custom modded to fit my play style.</figcaption>
+              </figure>
+              <figure> 
+                <img id="hobby3Pic" class="hobbyImage" src="https://joanne-chang.github.io/images/hobbies/hobby3.jpg">
+                <figcaption id="hobby3PicCaption">Here's a mask I made. Remember to keep safe and observe social distancing!</figcaption>
+              </figure>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact" id="emailContact">
+        <img id="emailPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/email.png">
+        <a href="mailto:joachang@ucdavis.edu">joachang@ucdavis.edu</a>
+      </div>
+      
+      <div class="contact" id="linkedInContact">
+        <img id="linkedInPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
+        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/joanne-chang</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  
+</html>
