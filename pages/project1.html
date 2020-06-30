@@ -1,0 +1,93 @@
+<!-- credit @Joanne-Chang on GitHub -->
+<!-- If you use this code, please don't remove the credits! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>"Aggie Dish" Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet">
+    <link rel="icon" href="https://joanne-chang.github.io/images/icons/favicon.ico">
+  </head>
+  
+  <body>
+    
+    <header>
+      <div class="headerTitle">
+        <h1 class="headerName">Joanne Chang</h1>
+        <h2 class="headerMajor">Computer Science & Engineering @ UC Davis</h2>
+        <p id="warning"> (*Warning: This website is currently only desktop-friendly!) </p>
+      </div>
+
+      <div class="headerTabs" id="headerTabs">
+        <button id="aboutMeButton" class="tabButtons" onclick="window.location.href = '/';">About Me</button>
+        <button id="project1Button" class="tabButtons" onclick="window.location.href = '/pages/project1.html';">Aggie Dish</button>
+        <button id="project2Button" class="tabButtons" onclick="window.location.href = '/pages/project2.html';">IFTTT to Twitter</button>
+        <button id="project3Button" class="tabButtons" onclick="window.location.href = '/pages/project3.html';">Delivering Consequences</button>
+        <button id="resumeButton" class="tabButtons" onclick="window.location.href = '/pages/resume.html';">Resume</button>
+      </div>
+    </header>
+    
+    <main>
+      <div class="pageWrap">
+        <div class="workShowcase">
+
+          <h1 class="projectTitle">Aggie Dish</h1>
+          
+          <h2 class="projectSubtitle">Project Overview</h2>
+          <p class="projectDescription">
+            <em>Aggie Dish</em> is a mobile app that provides info about the menus at various on-campus eateries. This app lets 
+            users plan when and where to eat at on-campus and to check whether the available eateries have food that fit any 
+            dietary preferences or exclude specific allergens. A brief explanation and demo video as presented by my Senior 
+            Design team is available <a href="https://youtu.be/paa2Acjiuv0" class="projectLink">here</a>.
+          </p>
+          <img id="project1Pic" class="projectImage" src="https://joanne-chang.github.io/images/projects/project1.png">
+          
+          <h2 class="projectSubtitle">My role in the project</h2>
+          <p class="projectDescription">
+            During my last 6 months at UC Davis, I worked on developing this iOS mobile application from the ground up for my Senior 
+            Design class. This was definitely the longest lasting and largest school project that I have ever worked on. As such, 
+            this project is also the project that I am the most proud of at the time of finishing school. My major contributions 
+            included early development on the frontend part of the app and later on the server side of the app.
+          </p>
+          
+          <p class="projectDescription">
+            During the Winter Quarter of 2020, I initially worked on developing many of the app's screens through XCode storyboard 
+            and then later switching them to programmatically created screens. As the project progressed along, I later worked on 
+            fixing any visual bugs that people had caught, and then also worked on various parts of the app’s functionality.
+          </p>
+          <p class="projectDescription">
+            Early on in the Spring Quarter of 2020, I was moved from working on the frontend to the backend of this app. For this, 
+            I primarily worked on developing and then later fixing the implementation of the Java protocol buffers that are used 
+            on the server side of this app. This mainly included working on the various gRPC methods (which are the methods needed 
+            in order for the frontend to actually get data from the database), including getting data about a specific eatery, 
+            getting data about a list of eateries, and also getting data about a specific meal menu.
+          </p>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <img id="emailPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/email.png">
+        <a href="mailto:joachang@ucdavis.edu">joachang@ucdavis.edu</a>
+      </div>
+      
+      <div class="contact">
+        <img id="linkedinPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
+        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/joanne-chang</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  
+</html>

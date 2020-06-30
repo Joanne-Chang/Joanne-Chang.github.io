@@ -135,7 +135,8 @@ main {
 }
 
 #hobby3Pic {
-  width: 75%;
+  width: 85%;
+  margin-left: 20px;
 }
 
 figcaption {
@@ -158,7 +159,78 @@ figure {
 }
 
 #hobby3PicCaption {
-  width: 75%;
+  width: 85%;
+}
+
+.workShowcase {
+  text-align: left;
+}
+
+.projectTitle {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.projectSubtitle {
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.projectDescription {
+  margin-bottom: 15px;
+}
+
+.projectLink {
+  color: blue;
+  padding: 0px;
+  font-size: 18px;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Project 1 page */
+#project1Pic {
+  width: 100%;
+}
+
+/* Project 2 page */
+#project2Pic1{
+  width: 25%;
+  margin-right: 20px;
+}
+
+#project2Pic2 {
+  width: 50%;
+}
+
+.project2Images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* Project 3 page */
+#project3Pic1 {
+  width: 40%;
+}
+
+#project3Pic2 {
+  width: 55%;
+  margin-left: 20px;
+}
+
+.project3Images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /* Footer */

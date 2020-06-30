@@ -1,0 +1,99 @@
+<!-- credit @Joanne-Chang on GitHub -->
+<!-- If you use this code, please don't remove the credits! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>"IFTTT to Twitter" Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet">
+    <link rel="icon" href="https://joanne-chang.github.io/images/icons/favicon.ico">
+  </head>
+  
+  <body>
+    
+    <header>
+      <div class="headerTitle">
+        <h1 class="headerName">Joanne Chang</h1>
+        <h2 class="headerMajor">Computer Science & Engineering @ UC Davis</h2>
+        <p id="warning"> (*Warning: This website is currently only desktop-friendly!) </p>
+      </div>
+
+      <div class="headerTabs" id="headerTabs">
+        <button id="aboutMeButton" class="tabButtons" onclick="window.location.href = '/';">About Me</button>
+        <button id="project1Button" class="tabButtons" onclick="window.location.href = '/pages/project1.html';">Aggie Dish</button>
+        <button id="project2Button" class="tabButtons" onclick="window.location.href = '/pages/project2.html';">IFTTT to Twitter</button>
+        <button id="project3Button" class="tabButtons" onclick="window.location.href = '/pages/project3.html';">Delivering Consequences</button>
+        <button id="resumeButton" class="tabButtons" onclick="window.location.href = '/pages/resume.html';">Resume</button>
+      </div>
+    </header>
+    
+    <main>
+      <div class="pageWrap">
+        <div class="workShowcase">
+
+          <h1 class="projectTitle">IFTTT to Twitter</h1>
+          
+          <h2 class="projectSubtitle">Project Overview</h2>
+          <p class="projectDescription">
+            The <em>IFTTT to Twitter</em> project was the final project of my Embedded Systems class and utilized several concepts 
+            that we had been taught over the course of the quarter. The main objective of this project was to convert a CC3200 
+            LaunchPad to an IoT device by using the RESTful API in order to send some message through the LaunchPad to an online 
+            location. The only other requirement of this project was to modify the CC3200 LaunchPad in a unique way compared to 
+            other projects in the class.
+          </p>
+          
+          <div class="project2Images">
+            <img id="project2Pic1" class="projectImage" src="https://joanne-chang.github.io/images/projects/project2a.jpg">
+            <img id="project2Pic2" class="projectImage" src="https://joanne-chang.github.io/images/projects/project2b.png">
+          </div>
+          
+          <h2 class="projectSubtitle">My role in the project</h2>
+          <p class="projectDescription">
+            With this project, I was given the chance to create a project that combined both hardware and software. Working with 
+            a lab partner, we decided that for the core of our project, the web service that we would be using to make our LaunchPad 
+            an IoT device would be IFTTT with the targetted online location being a Twitter account. This is the main software part 
+            of the project.
+          </p>
+          <p class="projectDescription">
+            For the hardware and "unique" aspect of our project, we chose to use a television remote control to type up alphanumeric 
+            text messages that would then be sent through the LaunchPad and posted online under the connected Twitter account. In an 
+            image above, you'll see that there are several wires connecting the LaunchPad to a breadboard that has an OLED display 
+            screen and an IR receiver module. The module is used to convert the IR remote signals sent by the remote control into 
+            numeric patterns that our C code (which is uplaoded to the LaunchPad) can translate into alphanumeric characters. These 
+            characters are then sent to the OLED screen to display what had been pressed on the remote control.
+          </p>
+          <p class="projectDescription">
+            When the "send" button is selected on the remote control, the message displayed on the OLED screen is sent back to the 
+            LaunchPad, which then sends the message over the Internet to the connected Twitter account for posting. The pictures 
+            included above show an example of the custom message "CRUMBLE" being successfully sent over the Internet from the CC3200 
+            LaunchPad to a Twitter page by utilizing the IFTTT Internet of Things service.
+          </p>
+
+        </div> 
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <img id="emailPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/email.png">
+        <a href="mailto:joachang@ucdavis.edu">joachang@ucdavis.edu</a>
+      </div>
+      
+      <div class="contact">
+        <img id="linkedinPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
+        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/joanne-chang</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  
+</html>
