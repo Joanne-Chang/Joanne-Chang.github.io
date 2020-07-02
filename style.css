@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* sticky footer */
-  background-color: #2DC8E1;
+  background-color: #55aed8;
 }
 
 /* Header */
@@ -19,19 +19,22 @@ header {
   color: white;
 }
 
-.headerName {
-  display: flex;
-  justify-content: center;
-  font-weight: 900;
+.headerNameSection {
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+#headerName {
+  font-weight: 900;
   font-size: 30px;
 }
 
 .headerMajor {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 25px;
 }
 
@@ -124,6 +127,29 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#hobbySection {
+  display: none;
+}
+
+#hobbyButton {
+  background-color: inherit;
+  border: 2px gray solid;
+  color: gray;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  font-family: 'Simonetta';
+  font-size: 16px;
+  font-weight: 900px;
 }
 
 #hobby1Pic {
@@ -262,6 +288,10 @@ a {
   width: 10%;
 }
 
+#emailContact {
+  margin-left: 40px;
+}
+
 /* Small screens */
 @media (max-width: 1000px) {
   main {
@@ -301,7 +331,7 @@ a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -313,9 +343,15 @@ a {
   
   #emailContact {
     padding-top: 10px;
+    margin-left: 0px;
   }
   
-  #linkedInContact {
+  #GitHubContact {
+    padding-top: 10px;
+  }
+  
+  #LinkedInContact {
+    padding-top: 10px;
     padding-bottom: 15px;
   }
 }

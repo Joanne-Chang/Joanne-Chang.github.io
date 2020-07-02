@@ -21,7 +21,7 @@
     
     <header>
       <div class="headerTitle">
-        <h1 class="headerName">Joanne Chang</h1>
+        <h1 class="headerNameSection"> <a href="/" id="headerName">Joanne Chang</a> </h1>
         <h2 class="headerMajor">Computer Science & Engineering @ UC Davis</h2>
         <p id="warning"> (*Warning: This website is currently only desktop-friendly!) </p>
       </div>
@@ -54,7 +54,7 @@
               So why did I choose to study CS? When I first chose to do Computer Science as a major, part of the 
               reason was because tech is everywhere. I wanted (and still do want!) to contribute to that - to make 
               an impact on the world, however small. While I haven't settled into a specific field within CS yet, 
-              I am more than willing to try out different subtopics and always open to learning new things! 
+              I am more than willing to try out different subtopics and always open to learning new things!
             </p>
             <p class="aboutMe">
               To get a feel of my capabilities, check out the middle tabs of this site for an overview of what I 
@@ -67,7 +67,9 @@
               downtime include gaming, playing table tennis, and sewing. Check out the captions of some of my pics here!
             </p>
             
-            <div class="hobbyImageSection">
+            <button onclick="expandHobbySection()" id="hobbyButton">Show images</button>
+            
+            <div class="hobbyImageSection" id="hobbySection">
               <figure> 
                 <img id="hobby1Pic" class="hobbyImage" src="https://joanne-chang.github.io/images/hobbies/hobby1.jpg">
                 <figcaption id="hobby1PicCaption">Here's my Switch that I've spent too many hours playing the same game on.</figcaption>
@@ -94,9 +96,14 @@
         <a href="mailto:joachang@ucdavis.edu">joachang@ucdavis.edu</a>
       </div>
       
-      <div class="contact" id="linkedInContact">
-        <img id="linkedInPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
-        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/joanne-chang</a>
+      <div class="contact" id="GitHubContact">
+        <img id="GitHubPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/github.png">
+        <a href="https://www.github.com/Joanne-Chang/">github.com/Joanne-Chang</a>
+      </div>
+      
+      <div class="contact" id="LinkedInContact">
+        <img id="LinkedInPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
+        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/Joanne-Chang</a>
       </div>
     </footer>
 
