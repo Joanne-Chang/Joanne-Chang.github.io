@@ -1,15 +1,4 @@
-// window.onscroll = function() {myFunction()};
-
-// var header = document.getElementById("headerTabs");
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
+// credit @Joanne-Chang on GitHub
 
 function expandHobbySection() {
   var section = document.getElementById("hobbySection");
@@ -22,4 +11,10 @@ function expandHobbySection() {
     section.style.display = "none";
     buttonText.innerHTML = "Show images";
   }
+}
+
+// For small screens only,
+// Remove the extra &nbsp; space in the header
+if (screen.width < 600) {
+  document.getElementById("school").innerHTML = "@ UC Davis";
 }

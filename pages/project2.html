@@ -1,5 +1,4 @@
 <!-- credit @Joanne-Chang on GitHub -->
-<!-- If you use this code, please don't remove the credits! -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +21,8 @@
     <header>
       <div class="headerTitle">
         <h1 class="headerNameSection"> <a href="/" id="headerName">Joanne Chang</a> </h1>
-        <h2 class="headerMajor">Computer Science & Engineering @ UC Davis</h2>
-        <p id="warning"> (*Warning: This website is currently only desktop-friendly!) </p>
+        <h1 class="headerMajor"> <p id="major">Computer Science & Engineering</p> <p id="school">&nbsp;@ UC Davis</p></h1>
+        <p id="warning"> (*This site is best viewed on a desktop screen!) </p>
       </div>
 
       <div class="headerTabs" id="headerTabs">
@@ -43,11 +42,10 @@
           
           <h2 class="projectSubtitle">Project Overview</h2>
           <p class="projectDescription">
-            The <em>IFTTT to Twitter</em> project was the final project of my Embedded Systems class and utilized several concepts 
-            that we had been taught over the course of the quarter. The main objective of this project was to convert a CC3200 
-            LaunchPad to an IoT device by using the RESTful API in order to send some message through the LaunchPad to an online 
-            location. The only other requirement of this project was to modify the CC3200 LaunchPad in a unique way compared to 
-            other projects in the class.
+            The <em>IFTTT to Twitter</em> project was the final project of my Embedded Systems class. 
+            The main objective of this project was to convert a CC3200 LaunchPad to an IoT device by using the RESTful API and to use the device in a unique way. 
+            Using a television remote control, a user is able to type up alphanumeric text messages that can be sent through the LaunchPad 
+            and posted online under a connected Twitter account.
           </p>
           
           <div class="project2Images">
@@ -57,24 +55,24 @@
           
           <h2 class="projectSubtitle">My role in the project</h2>
           <p class="projectDescription">
-            With this project, I was given the chance to create a project that combined both hardware and software. Working with 
-            a lab partner, we decided that for the core of our project, the web service that we would be using to make our LaunchPad 
-            an IoT device would be IFTTT with the targetted online location being a Twitter account. This is the main software part 
-            of the project.
+            This project consisted of the usage of both hardware and software. 
+            For the software aspect of this project, I was in charge of setting up the web service that was used to make the LaunchPad an IoT device. 
+            As such, I chose to use IFTTT as the web service, with the targetted online location being a Twitter account. Along with setting up 
+            the web hooks for IFTTT to Twitter, I also wrote C code using the RESTful API to connect the LaunchPad to the school's wifi. 
+            This code was then uploaded onto the flash memory of the LaunchPad.
           </p>
           <p class="projectDescription">
-            For the hardware and "unique" aspect of our project, we chose to use a television remote control to type up alphanumeric 
-            text messages that would then be sent through the LaunchPad and posted online under the connected Twitter account. In an 
-            image above, you'll see that there are several wires connecting the LaunchPad to a breadboard that has an OLED display 
-            screen and an IR receiver module. The module is used to convert the IR remote signals sent by the remote control into 
-            numeric patterns that our C code (which is uplaoded to the LaunchPad) can translate into alphanumeric characters. These 
-            characters are then sent to the OLED screen to display what had been pressed on the remote control.
+            Meanwhile, for the hardware aspect of this project, I was in charge of physically modifying the CC3200 LaunchPad so that the LaunchPad 
+            could actually be used as an IoT device. Referring to lab manuals and doing some circuit calculations, I thus worked on connecting the 
+            LaunchPad to a breadboard with an OLED display screen and an IR receiver module, which you can see in the image above. 
           </p>
           <p class="projectDescription">
-            When the "send" button is selected on the remote control, the message displayed on the OLED screen is sent back to the 
-            LaunchPad, which then sends the message over the Internet to the connected Twitter account for posting. The pictures 
-            included above show an example of the custom message "CRUMBLE" being successfully sent over the Internet from the CC3200 
-            LaunchPad to a Twitter page by utilizing the IFTTT Internet of Things service.
+            So, how does this work? 
+            The module is used to convert the IR remote signals sent by the remote control into numeric patterns that C code (which was 
+            also written separately and then uploaded to the LaunchPad) can translate into alphanumeric characters. These characters are then 
+            sent to the OLED screen to display what had been pressed on the remote control. When the "send" button is selected on the 
+            remote control, the message displayed on the OLED screen is sent back to the LaunchPad, which then sends the message over the 
+            Internet to the connected Twitter account for posting.
           </p>
 
         </div> 
@@ -98,7 +96,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/../script.js"></script>
   </body>
   
 </html>

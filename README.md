@@ -7,8 +7,8 @@ it to my ever growing list of possible future features to implement later.
 **Currently working on:** Better project descriptions & overall site look
 
 #### To-Do List
-* Mobile-friendly version of website
 * Pop-up images when clicked on
+* Put tabs under Hamburger icon for small screens
 
 #### Possible Future Features
 * Music player? (Unlikely)
