@@ -269,6 +269,11 @@ em {
   cursor: pointer;
 }
 
+iframe {
+  width: 730px;
+  height: 941px;
+}
+
 /* Footer */
 footer {
   flex-grow: 0;  
