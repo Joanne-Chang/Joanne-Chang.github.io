@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* sticky footer */
-  background-color: #55aed8;
+  background-color: #2b6777;
 }
 
 /* Header */
@@ -109,17 +109,26 @@ main {
   float: left;
   width: 250px;
   height: 250px;
-  border-radius: 150px;
+  border-radius: 0px;
+  margin-left: -10px;
   margin-right: 30px;
   margin-bottom: 20px;
+  border: 8px solid maroon;
+  transform: rotate(-7deg);
 }
 
 .elevatorPitch {
   vertical-align: text-bottom;
 }
 
+.tagline {
+  padding-top: 40px;
+  color: red;
+  font-weight: bold;
+}
+
 .aboutMe {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .hobbyImage {
@@ -206,6 +215,7 @@ figure {
 .projectSubtitle {
   font-weight: 900;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 .projectDescription {
@@ -218,8 +228,38 @@ figure {
   font-size: 18px;
 }
 
+.videoTitle {
+  font-weight: 900;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.embeddedVideo {
+  width: 600px;
+  height: 338px;
+  display: block;
+  margin: auto;
+}
+
 em {
   font-style: italic;
+}
+
+bold {
+  font-weight: bold;
+}
+
+u {
+  text-decoration: underline;
+}
+
+/* Homepage / Index */
+.homepageLink {
+  color: mediumblue;
+  font-weight: bold;
+  padding: 0px;
+  font-size: 18px;
 }
 
 /* Project 1 page */
@@ -265,13 +305,13 @@ em {
 
 /* Resume page */
 #resumeImage {
-  width: 100%;
+  width: 200%;
   cursor: pointer;
 }
 
-iframe {
+.resumePDF {
   width: 730px;
-  height: 945px;
+  height: 941px;
 }
 
 /* Footer */
@@ -304,8 +344,9 @@ a {
 }
 
 #emailContact {
-  padding-left: 40px;
+  padding-left: 60px;
 }
+
 
 /* Small screens */
 @media (max-width: 1000px) {
@@ -419,6 +460,10 @@ a {
     padding: 30px;
   }
   
+  .homepageLink {
+    font-size: 13px;
+  }
+  
   .projectLink {
     font-size: 13px;
   }
@@ -429,6 +474,14 @@ a {
     margin-bottom: 25px;
     width: 200px;
     height: 200px;
+  }
+  
+  .tagline {
+    padding-top: 20px;
+  }
+
+  .aboutMe {
+    padding-top:20px;
   }
   
   figcaption {
@@ -449,5 +502,17 @@ a {
   
   #project3Pic2 {
     margin-left: 5px;
+  }
+  
+  .embeddedVideo {
+    width: 250px;
+    height: 141px;
+    display: block;
+    margin: auto;
+  }
+  
+  .resumePDF {
+    width: 310px;
+    height: 400px;
   }
 }

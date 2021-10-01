@@ -56,18 +56,18 @@
           <h2 class="projectSubtitle">My role in the project</h2>
           <p class="projectDescription">
             This project consisted of the usage of both hardware and software. 
-            For the software aspect of this project, I was in charge of setting up the web service that was used to make the LaunchPad an IoT device. 
-            As such, I chose to use IFTTT as the web service, with the targetted online location being a Twitter account. Along with setting up 
-            the web hooks for IFTTT to Twitter, I also wrote C code using the RESTful API to connect the LaunchPad to the school's wifi. 
+            For the software aspect of this project, I first had to set up the web service that was used to make the LaunchPad an IoT device. 
+            For this purpose, I chose to use IFTTT as the web service, with the targetted online location being a Twitter account. After setting up 
+            the web hooks for IFTTT to Twitter, I then wrote C code using the RESTful API to connect the LaunchPad to the school's wifi. 
             This code was then uploaded onto the flash memory of the LaunchPad.
           </p>
           <p class="projectDescription">
-            Meanwhile, for the hardware aspect of this project, I was in charge of physically modifying the CC3200 LaunchPad so that the LaunchPad 
-            could actually be used as an IoT device. Referring to lab manuals and doing some circuit calculations, I thus worked on connecting the 
+            Upon finishing the code, I then had to work on the hardware aspect of this project. This entailed me physically modifying the CC3200 
+            LaunchPad for usage as an actual IoT device. Referring to lab manuals and my own circuit calculations, I connected the 
             LaunchPad to a breadboard with an OLED display screen and an IR receiver module, which you can see in the image above. 
           </p>
           <p class="projectDescription">
-            So, how does this work? 
+            So, <em>how does this work?</em> 
             The module is used to convert the IR remote signals sent by the remote control into numeric patterns that C code (which was 
             also written separately and then uploaded to the LaunchPad) can translate into alphanumeric characters. These characters are then 
             sent to the OLED screen to display what had been pressed on the remote control. When the "send" button is selected on the 
@@ -82,7 +82,7 @@
     <footer>
       <div class="contact" id="emailContact">
         <img id="emailPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/email.png">
-        <a href="mailto:joachang@ucdavis.edu">joachang@ucdavis.edu</a>
+        <a href="mailto:jchang6@scu.edu">jchang6@scu.edu</a>
       </div>
       
       <div class="contact" id="GitHubContact">

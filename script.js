@@ -16,5 +16,5 @@ function expandHobbySection() {
 // For small screens only,
 // Remove the extra &nbsp; space in the header
 if (screen.width < 600) {
-  document.getElementById("school").innerHTML = "@ UC Davis";
+  document.getElementById("school").innerHTML = "@ SCU";
 }
