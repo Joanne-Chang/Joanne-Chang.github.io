@@ -109,12 +109,12 @@ main {
   float: left;
   width: 250px;
   height: 250px;
-  border-radius: 150px;
+  border-radius: 5px;
   margin-left: -10px;
   margin-right: 30px;
   margin-bottom: 20px;
-  border: 8px solid maroon;
-  transform: rotate(-7deg);
+  border: 8px solid #58181f;
+  transform: rotate(-3deg);
 }
 
 .elevatorPitch {
