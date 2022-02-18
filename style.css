@@ -318,7 +318,7 @@ u {
 footer {
   flex-grow: 0;  
   display: flex;
-  flex-directin: row;
+  flex-direction: row;
   justify-content: center;
   width: 100%;
 }
