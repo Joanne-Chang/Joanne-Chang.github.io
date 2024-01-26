@@ -1,20 +1,34 @@
-// credit @Joanne-Chang on GitHub
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    var mainContent = document.querySelector('.main-content'); // Adjust this selector based on your actual class name
+    var body = document.body;
 
-function expandHobbySection() {
-  var section = document.getElementById("hobbySection");
-  var buttonText = document.getElementById("hobbyButton");
-  
-  if (section.style.display != "flex") {
-    section.style.display = "flex";
-    buttonText.innerHTML = "Hide images";
-  } else {
-    section.style.display = "none";
-    buttonText.innerHTML = "Show images";
-  }
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-300px';
+        body.classList.remove('sidebar-opened');
+        mainContent.style.marginLeft = '0'; // Reset the margin when closing the sidebar
+    } else {
+        sidebar.style.left = '0';
+        body.classList.add('sidebar-opened');
+        mainContent.style.marginLeft = '189px'; // Adjust the margin based on your sidebar width
+    }
 }
 
-// For small screens only,
-// Remove the extra &nbsp; space in the header
-if (screen.width < 600) {
-  document.getElementById("school").innerHTML = "@ SCU";
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        toggleSidebar(); // Close sidebar after clicking on a section
+    }
 }
+
+window.onscroll = function () {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 50) {
+        header.style.top = '0';
+    } else {
+        header.style.top = '50px';
+    }
+};
