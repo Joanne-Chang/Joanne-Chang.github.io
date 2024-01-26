@@ -1,92 +1,152 @@
-<!-- credit @Joanne-Chang on GitHub -->
-
 <!DOCTYPE html>
 <html lang="en">
   
-  <head>
-    <title>Welcome to my page!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" type="text/css" href="/reset.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Simonetta:200,300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700" rel="stylesheet">
-    <link rel="icon" href="https://joanne-chang.github.io/images/icons/favicon.ico">
-  </head>
-  
-  <body>
-    
-    <header>
-      <div class="headerTitle">
-        <h1 class="headerNameSection"> <a href="/" id="headerName">Joanne Chang</a> </h1>
-        <h1 class="headerMajor"> <p id="major">M.S. Computer Science & Engineering</p> <p id="school">&nbsp;@ SCU</p></h1>
-        <p id="warning"> (*This site is best viewed on a desktop screen!) </p>
-      </div>
+<!-- Like this code?! FOLLOW ME ON GITHUB! https://github.com/Joanne-Chang ✨ -->
 
-      <div class="headerTabs" id="headerTabs">
-        <button id="aboutMeButton" class="tabButtons" onclick="window.location.href = '/';">About Me</button>
-        <button id="project1Button" class="tabButtons" onclick="window.location.href = '/pages/project1.html';">Aggie Dish</button>
-        <button id="project2Button" class="tabButtons" onclick="window.location.href = '/pages/project2.html';">IFTTT to Twitter</button>
-        <button id="project3Button" class="tabButtons" onclick="window.location.href = '/pages/project3.html';">Delivering Consequences</button>
-        <button id="resumeButton" class="tabButtons" onclick="window.location.href = '/pages/resume.html';">Resume</button>
-      </div>
-    </header>
-    
-    <main>
-      <div class="pageWrap">
-        
-        <div class="pageDescription">
-          <img id="profilePic" src="https://joanne-chang.github.io/images/profilePicture.png">
-          
-          <p class="elevatorPitch">
-            Hi! I'm Joanne. I'm a current student at Santa Clara University studying for a M.S. degree in Computer Science and Engineering. 
-            I previously attended the University of California, Davis, where I got a B.S. degree in Computer Science and Engineering back in June 2020. 
-            <br><br>
-            To date, I've created 7 websites (including this one! see my repository 
-            <a href="https://github.com/Joanne-Chang/Joanne-Chang.github.io" class="homepageLink">here</a> for the source code), developed 
-            3 mobile applications, made 1 indie game, and completed dozens of more projects during my time both in and out of school.
-            I've also participated in <a href="https://devpost.com/Joanne-Chang" class="homepageLink">3 hackathons</a> and 
-            worked on 2 successful projects utilizing <bold>data science</bold> and <bold>machine learning</bold> at a past internship.
-            <br><br>
-            As of now, <em>I am looking for <bold><u>any software engineering or related job opportunity</u></bold></em> anywhere. 
-            (I'm open to any junior position or internship or anything similar!) My resume is available via the "Resume" tab above. 
-          </p>
-          <p class="tagline">
-            Please feel free to contact me if you think I might be a good fit for any job openings!
-          </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Chang - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+</head>
 
-          <div class="aboutMeSection">
-            <p class="aboutMe">
-              *** Please also feel free to check out the middle tabs of this website for an overview of a few of the school projects 
-              I had done at UC Davis. (Pictures included!) ***
-            </p>
-          </div>
-          
+<body>
+    <div class="navbar">
+        <div class="menu-icon-container" onclick="toggleSidebar()">
+            <div class="menu-icon">
+                ☰ <!-- Hamburger icon -->
+            </div>
         </div>
-        
-      </div>
-    </main>
+    </div>
 
-    <footer>
-      <div class="contact" id="emailContact">
-        <img id="emailPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/email.png">
-        <a href="mailto:jchang6@scu.edu">jchang6@scu.edu</a>
-      </div>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('experience')">Experience</button>
+        <button onclick="scrollToSection('education')">Education</button>
+        <button onclick="scrollToSection('skills')">Skills</button>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+    </div>
+
+    <div class="main-content">
+  
+    <header>
+        <h1 class="birthstone-font">Joanne Chang</h1>
+        <p class="subheader">Software Engineer 💻</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+        Hi! I’m Joanne, a highly motivated and detail-oriented software engineer with a passion for developing innovative technologies and creative solutions.
+        
+        </p>
+        <p>
+        When I’m not coding, I enjoy dabbling in arts &amp; crafts, trying new activities, playing video games, and doting on my dog~
+        </p>
+        <p>
+        Please feel free to contact me if you think I might be a good fit for any job openings!
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Computer Engineering Research Assistant | SCU RSL</h3>
+            <p class="date">March 2022 - June 2023</p>
+            <p>TBA... (see resume for now)</p>
+        </div>
+        <div class="job">
+            <h3>Software Engineering Full-time Intern | KLA</h3>
+            <p class="date">June 2019 - September 2019</p>
+            <p>TBA... (see resume for now)</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="degree">
+            <h3>Master of Science in Computer Science &amp; Engineering</h3>
+            <p class="date">Graduated June 2023</p>
+            <p>Santa Clara University</p>
+        </div>
+        <div class="degree">
+            <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+            <p class="date">Graduated June 2020</p>
+            <p>University of California, Davis</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
       
-      <div class="contact" id="GitHubContact">
-        <img id="GitHubPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/github.png">
-        <a href="https://www.github.com/Joanne-Chang/">github.com/Joanne-Chang</a>
-      </div>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li> <li>C++</li> <li>C#</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+        </ul>
       
-      <div class="contact" id="LinkedInContact">
-        <img id="LinkedInPic" class="contactIcon" src="https://joanne-chang.github.io/images/icons/linkedin.png">
-        <a href="https://www.linkedin.com/in/joanne-chang/">linkedin.com/in/Joanne-Chang</a>
-      </div>
-    </footer>
+        <h3>Tools</h3>
+        <ul>
+            <li>Git</li>
+            <li>Visual Studio Code</li>
+            <li>Jupyter Notebook</li>
+            <li>Unity</li>
+        </ul>
+    </section>
+      
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>Personal Projects</h3>
+        <div class="project">
+            TBA!
+<!--             <h4>Project A</h4>
+            <p>A web application that...</p> -->
+        </div>
+
+        <h3>School Projects</h3>
+        <div class="project">
+            <h4>ReFOCUS Chrome Extension</h4>
+            <p>A chrome extension to help users refocus their attention on what's important.</p>
+        </div>
+        <div class="project">
+            <h4>AGGIE Dish Appn</h4>
+            <p>A mobile app to help students plan their next meal on-campus.</p>
+        </div>
+
+        <h3>Hackathons</h3>
+        <div class="project">
+            TBA!
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        
+        <div class="contact-icons">
+            <a href="mailto:joanne.x.chang@gmail.com"><i class="far fa-envelope"></i></a>
+            <p>joanne.x.chang@gmail.com</p>
+          
+            <a href="https://github.com/joanne-chang"><i class="fab fa-github"></i></a>
+            github.com/joanne-chang
+          
+            <a href="https://linkedin.com/in/joanne-chang"><i class="fab fa-linkedin"></i></a>
+            linkedin.com/in/joanne-chang
+        </div>
+    </section>
+      
+    </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
   
+<!-- @Joanne-Chang on GitHub!!! -->
+
 </html>

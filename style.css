@@ -1,518 +1,191 @@
-/* credit @Joanne-Chang on GitHub */
-
-* {
-  box-sizing: border-box;
-}
-
-/* Body */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* sticky footer */
-  background-color: #2b6777;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333;
 }
 
-/* Header */
-header {
-  font-family: 'Simonetta';
-  flex-grow: 0;
-  display: flex;
-  flex-direction: column;
-  color: white;
+.navbar {
+    background-color: #4AB0BD;
+    padding: 10px;
 }
 
-.headerNameSection {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+.menu-icon-container {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-#headerName {
-  font-weight: 900;
-  font-size: 30px;
-}
-
-.headerMajor {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 25px;
-}
-
-.headerTabs {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: inherit;
-}
-
-.headerTabs button {
-  background-color: inherit;
-  border: 2px white solid;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  border-radius: 10px;
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 2px 5px;
-  
-  font-family: 'Simonetta';
-  font-size: 16px;
-  font-weight: 900px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-
-#warning {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-/* Main */
-main {
-  flex-grow: 1; /* sticky footer */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  font-size: 18px;
-}
-
-.pageWrap {
-  background: white;
-  border-radius: 15px;
-  padding: 50px;
-  text-align: center;
-}
-
-#profilePic {
-  float: left;
-  width: 250px;
-  height: 250px;
-  border-radius: 150px;
-  margin-left: -10px;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  border: 8px solid #58181f;
-  transform: rotate(0deg);
-}
-
-.elevatorPitch {
-  vertical-align: text-bottom;
-}
-
-.tagline {
-  padding-top: 40px;
-  color: red;
-  font-weight: bold;
-}
-
-.aboutMe {
-  padding-top: 40px;
-}
-
-.hobbyImage {
-  margin-top: 25px;
-}
-
-.hobbyImageSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#hobbySection {
-  display: none;
-}
-
-#hobbyButton {
-  background-color: inherit;
-  border: 2px gray solid;
-  color: gray;
-  outline: none;
-  cursor: pointer;
-  border-radius: 10px;
-  
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  
-  font-family: 'Simonetta';
-  font-size: 16px;
-  font-weight: 900px;
-}
-
-#hobby1Pic {
-  width: 80%;
-}
-
-#hobby2Pic {
-  width: 100%;
-}
-
-#hobby3Pic {
-  width: 85%;
-  margin-left: 20px;
-}
-
-figcaption {
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#hobby1PicCaption {
-  width: 80%;
-}
-
-#hobby2PicCaption {
-  width: 100%;
-}
-
-#hobby3PicCaption {
-  width: 85%;
-}
-
-.workShowcase {
-  text-align: left;
-}
-
-.projectTitle {
-  font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.projectSubtitle {
-  font-weight: 900;
-  margin-bottom: 12px;
-  margin-top: 10px;
-}
-
-.projectDescription {
-  margin-bottom: 15px;
-}
-
-.projectLink {
-  color: blue;
-  padding: 0px;
-  font-size: 18px;
-}
-
-.videoTitle {
-  font-weight: 900;
-  margin-bottom: 12px;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.embeddedVideo {
-  width: 600px;
-  height: 338px;
-  display: block;
-  margin: auto;
-}
-
-em {
-  font-style: italic;
-}
-
-bold {
-  font-weight: bold;
-}
-
-u {
-  text-decoration: underline;
-}
-
-/* Homepage / Index */
-.homepageLink {
-  color: mediumblue;
-  font-weight: bold;
-  padding: 0px;
-  font-size: 18px;
-}
-
-/* Project 1 page */
-#project1Pic {
-  width: 100%;
-}
-
-/* Project 2 page */
-#project2Pic1 {
-  width: 25%;
-  margin-right: 20px;
-}
-
-#project2Pic2 {
-  width: 50%;
-}
-
-.project2Images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
-
-/* Project 3 page */
-#project3Pic1 {
-  width: 40%;
-}
-
-#project3Pic2 {
-  width: 55%;
-  margin-left: 20px;
-}
-
-.project3Images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
-
-/* Resume page */
-#resumeImage {
-  width: 200%;
-  cursor: pointer;
-}
-
-.resumePDF {
-  width: 730px;
-  height: 942px;
-}
-
-/* Footer */
-footer {
-  flex-grow: 0;  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.contact {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  padding: 10px;
-  font-size: 16px;
-  color: white;
-}
-
-.contactIcon {
-  width: 10%;
-}
-
-#emailContact {
-  padding-left: 60px;
-}
-
-
-/* Small screens */
-@media (max-width: 1000px) {
-  main {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  .hobbyImageSection {
+.menu-icon {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #hobby1Pic {
-    width: 60%;
-  }
-
-  #hobby2Pic {
-    width: 60%;
-  }
-
-  #hobby3Pic {
-    width: 60%;
-    margin-left: 0px;
-  }
-  
-  #hobby1PicCaption {
-    width: 60%;
-  }
-
-  #hobby2PicCaption {
-    width: 60%;
-  }
-
-  #hobby3PicCaption {
-    width: 60%;
-  }
-  
-  #project2Pic1 {
-    margin-right: 10px;
-  }
-  
-  #project3Pic2 {
-    margin-left: 10px;
-  }
+    margin-right: 20px;
+    z-index: 1; /* Ensure the hamburger icon appears on top */
+    color: white;
 }
 
-@media (max-width: 800px) {
-  .headerTabs {
-    flex-direction: column;
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Set initial position off-screen */
+    height: 100vh;
+    width: 150px;
+    background-color: #4AB0BD;
+    padding: 20px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #018f8f;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebar button:hover {
+    background-color: #017070;
+    color: white;
+}
+
+.sidebar-opened .main-content {
+    margin-left: 200px; /* Adjust the margin based on your sidebar width */
+}
+
+.sidebar .close-btn {
+    background-color: #4AB0BD;
+    color: #018f8f;
+    border: 1px solid #018f8f;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+header {
+    margin-left: 0px; /* Adjust margin to accommodate the hamburger icon */
+    padding-bottom: 20px;
+    background-color: #4AB0BD;
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    margin-left: 0px; /* Adjust margin to accommodate the hamburger icon */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4AB0BD;
+}
+
+.job, .degree {
+    margin-bottom: 20px;
+}
+
+.job h3, .degree h3 {
+    color: #333;
+}
+
+#projects h3 {
+    color: #66CCCC; 
+}
+
+.project h4 {
+    color: black;
+    font-size: 17px;
+}
+
+.date {
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #4AB0BD;
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+#projects .project {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#projects .project:hover {
+    background-color: #f9f9f9;
+}
+
+.birthstone-font {
+    font-family: 'Birthstone', cursive;
+    font-weight: 300; /* Adjust the font weight as needed */
+    font-size: 4em; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+.subheader {
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+#contact p {
+    margin: 5px 0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .headerTabs button {
-    width: 30%;
-  }
-  
-  #resumePage {
-    padding: 5%;
-  }
-  
-  footer {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 40px;
-  }
-  
-  .contact {
-    padding: 0px;
-  }
-  
-  #emailContact {
-    padding-top: 10px;
-    padding-left: 0px;
-  }
-  
-  #GitHubContact {
-    padding-top: 10px;
-  }
-  
-  #LinkedInContact {
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
+}
+
+.contact-icons a {
+    color: #4DADAD; /* Teal color for the icons */
+    font-size: 2em;
+    margin-left: 40px;
+    margin-right: 12px;
+}
+
+.contact-icons a:hover {
+    color: #006666; /* Darker teal color on hover */
 }
 
 @media (max-width: 600px) {
-  #major {
-    
-  }
-  
-  #school {
-    
-  }
-  
-  .headerMajor {
+  .contact-icons {
     flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
   }
   
-  .headerTabs button {
-    width: 50%;
-  }
-  
-  main {
-    font-size: 13px;
-  }
-  
-  .pageWrap {
-    padding: 30px;
-  }
-  
-  .homepageLink {
-    font-size: 13px;
-  }
-  
-  .projectLink {
-    font-size: 13px;
-  }
-  
-  #profilePic {
-    float: none;
+  .contact-icons a {
+    margin-top: 18px;
+    margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 25px;
-    width: 200px;
-    height: 200px;
-  }
-  
-  .tagline {
-    padding-top: 20px;
-  }
-
-  .aboutMe {
-    padding-top:20px;
-  }
-  
-  figcaption {
-    font-size: 10px;
-  }
-  
-  a {
-    font-size: 13px;
-  }
-  
-  .projectTitle {
-    font-size: 15px;
-  }
-  
-  #project2Pic1 {
-    margin-right: 5px;
-  }
-  
-  #project3Pic2 {
-    margin-left: 5px;
-  }
-  
-  .embeddedVideo {
-    width: 250px;
-    height: 141px;
-    display: block;
-    margin: auto;
-  }
-  
-  .resumePDF {
-    width: 310px;
-    height: 400px;
   }
 }
