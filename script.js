@@ -32,3 +32,31 @@ window.onscroll = function () {
         header.style.top = '50px';
     }
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle display based on the button clicked
+    function toggleProjects(sectionClass) {
+        var projects = document.querySelectorAll('.project.' + sectionClass);
+
+        projects.forEach(function (project) {
+            if (project.style.display === 'none' || project.style.display === '') {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+
+    // Event listeners for each button
+    document.getElementById('toggleSchoolProjects').addEventListener('click', function () {
+        toggleProjects('school');
+    });
+
+    document.getElementById('togglePersonalProjects').addEventListener('click', function () {
+        toggleProjects('personal');
+    });
+
+    document.getElementById('toggleHackathons').addEventListener('click', function () {
+        toggleProjects('hackathons');
+    });
+});

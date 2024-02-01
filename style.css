@@ -131,6 +131,19 @@ ul li {
     border-radius: 4px;
 }
 
+.language_1 {
+  background-color: #4DADAD;
+}
+
+.language_2 {
+  background-color: #469FA6;
+}
+
+.language_3 {
+  background-color: #5BB8B8;
+}
+
+
 #projects .project {
     cursor: pointer;
     padding: 10px;
@@ -143,6 +156,30 @@ ul li {
     background-color: #f9f9f9;
 }
 
+#toggleProjects {
+    background-color: #4DADAD; /* Teal color for the button */
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.university_1 {
+  color: goldenrod;
+  font-weight: 600;
+}
+
+.university_2 {
+  color: crimson;
+  font-weight: 600;
+}
+
+.hackathon {
+  color: darkblue;
+  font-weight: 600;
+}
+
 .birthstone-font {
     font-family: 'Birthstone', cursive;
     font-weight: 300; /* Adjust the font weight as needed */
@@ -151,7 +188,7 @@ ul li {
 }
 
 .subheader {
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 0px;
 }
 
@@ -174,6 +211,11 @@ ul li {
 
 .contact-icons a:hover {
     color: #006666; /* Darker teal color on hover */
+}
+
+#notice {
+  color: red;
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
