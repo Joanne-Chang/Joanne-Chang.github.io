@@ -96,12 +96,79 @@ h2 {
     color: #4AB0BD;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.star-container {
+    position: relative;
+    width: 15vw; /* Adjust the size of the star */
+    height: 15vw; /* Adjust the size of the star */
+    overflow: hidden;
+    margin-left: auto; /* Push the star to the right */
+    margin-right: auto; /* Push the star to the left */
+}
+
+.diamond-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #4DADAD; /* Teal color for the diamond shape */
+    z-index: 2; /* Ensure the diamond is above the square */
+}
+
+.small-diamond-shape {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%; /* Adjust the size of the inner diamond */
+    height: 90%; /* Adjust the size of the inner diamond */
+    background-color: #ffffff; /* Color of the inner diamond */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.square-profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%; /* Adjust the size of the black square */
+    height: 65%; /* Adjust the size of the black square */
+    background-color: white; /* Black color for the square */
+    z-index: 1; /* Ensure the square is below the diamond */
+    border: 5px solid teal;
+}
+
+.diamond-shape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #4DADAD; /* Thin border matching the background color */
+    box-sizing: content-box; /* Ensure the border is included in the size */
+}
+
+.diamond-shape img {
+    width: 100%; /* Make the image fill the diamond shape */
+    height: auto; /* Maintain the aspect ratio of the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .job, .degree {
     margin-bottom: 20px;
 }
 
 .job h3, .degree h3 {
-    color: #333;
+    color: #333333;
 }
 
 #projects h3 {
@@ -143,12 +210,27 @@ ul li {
   background-color: #5BB8B8;
 }
 
+.project-container {
+    display: flex;
+    justify-content: space-between; /* Distribute projects evenly */
+    margin-top: 1em; /* Add some space between projects */
+}
+
+.project-square {
+    flex: 0 0 32%; /* Each project takes up 30% of the container width */
+    background-color: #ffffff; /* White background for the project square */
+    border: 2px solid #4DADAD; /* Teal border for the project square */
+    padding: 1em;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    color: #4DADAD; /* Teal text color for contrast */
+}
 
 #projects .project {
     cursor: pointer;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
 }
 
@@ -156,13 +238,21 @@ ul li {
     background-color: #f9f9f9;
 }
 
-#toggleProjects {
+.button-container {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleProjects {
     background-color: #4DADAD; /* Teal color for the button */
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .university_1 {

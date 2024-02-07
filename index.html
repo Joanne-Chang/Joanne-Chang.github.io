@@ -40,16 +40,31 @@
 
     <section id="about">
         <h2>About Me</h2>
+
+      <div class="profile-container">
         <p>
-        Hi! I’m Joanne, a highly motivated and detail-oriented software engineer with a passion for developing innovative technologies and creative solutions.
+          Hi! I’m Joanne, a highly motivated and detail-oriented software engineer with a passion for 
+          developing innovative technologies and creative solutions.
+          
+          <br><br>
+          When I’m not coding, I enjoy dabbling in arts &amp; crafts, playing video games, and doting on my dog~
+          
+          <br><br>  
+          <span id="notice">
+            Please feel free to contact me if you think I might be a good fit for any job openings!
+          </span>
+        </p>
         
-        </p>
-        <p>
-        When I’m not coding, I enjoy dabbling in arts &amp; crafts, playing video games, and doting on my dog~
-        </p>
-        <p id="notice">
-        Please feel free to contact me if you think I might be a good fit for any job openings!
-        </p>
+        <div class="star-container">
+        <div class="square-profile"></div>
+        <div class="diamond-shape">
+            <div class="small-diamond-shape">
+            <img src="https://cdn.glitch.global/06501bdf-c496-46b3-a57c-fb13f33eb2ed/temp%20profile%20pic.jpg" alt="Profile Picture">
+          </div>
+        </div>
+        </div>
+      </div>
+
     </section>
 
     <section id="experience">
@@ -114,22 +129,100 @@
         <h2>Projects</h2>
 
         <h3>Personal Projects</h3>
-        <button id="togglePersonalProjects">Show Personal Projects</button>
+          <div class="project-container">
+              <!-- Project 1 -->
+              <div class="project-square">
+                  <h4>Discord Bot</h4>
+                   <p>
+                    (More info to be added!) Derived from an AI generative text Twitter bot created for a SCU class.
+                  </p>
+                  <p>
+                    ...
+                  </p>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-square">
+                  <h4>Guide Maker</h4>
+                   <p>
+                    (More info to be added!) Grafana for visualization.
+                  </p>
+                  <p>
+                    ...
+                  </p>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-square">
+                  <h4>Project 3</h4>
+                   <p>
+                    To be added!
+                  </p>
+                  <p>
+                    ...
+                  </p>
+              </div>
+          </div>
+      
+        <div class="button-container">
+          <button id="togglePersonalProjects" class="toggleProjects personal">Show More</button>
+        </div>  
+      
         <div class="project personal" style="display: none;">
-            <h4>Beidou Discord Bot</h4>
+          <h4>Shez Discord Bot</h4>
             <p>
-              (More info to be added!) Originally an AI generative text Twitter bot created for a SCU class.
+              (More info to be added!) Derived from an AI generative text Twitter bot created for a SCU class.
             </p>
         </div>
         <div class="project personal" style="display: none;">
-            <h4>AO3 Stats Web Scraper</h4>
+            <h4>Genshin Impact - Custom Farming Guide Maker</h4>
             <p>
               (More info to be added!) Grafana for visualization.
             </p>
         </div>
 
         <h3>School Projects</h3>
-        <button id="toggleSchoolProjects">Show School Projects</button>
+          <div class="project-container">
+              <!-- Project 1 -->
+              <div class="project-square">
+                  <h4>ReFOCUS Chrome Extension</h4>
+                  <p>
+                    My final project at <span class="university_2">Santa Clara University</span>. 
+                    A chrome extension to help users refocus their attention on important tasks!
+                  </p>
+                  <p>
+                    HTML, CSS, JavaScript.
+                  </p>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-square">
+                  <h4>AGGIE Dish App</h4>
+                  <p>
+                    My senior design project at <span class="university_1">UC Davis</span>. 
+                    An iOS mobile app to help students plan their next meal on-campus.
+                  </p>
+                  <p>
+                    Java, Swift.
+                  </p>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-square">
+                  <h4>Project 3</h4>
+                   <p>
+                    To be added!
+                  </p>
+                  <p>
+                    ...
+                  </p>
+              </div>
+          </div>
+
+        <div class="button-container">
+          <button id="toggleSchoolProjects" class="toggleProjects school">Show More</button>
+        </div>  
+      
         <div class="project school" style="display: none;">
             <h4>ReFOCUS Chrome Extension</h4>
             <p>
@@ -153,11 +246,61 @@
         </div>
 
         <h3>Hackathons</h3>
-        <button id="toggleHackathons">Show Hackathon Projects</button>
+          <div class="project-container">
+              <!-- Project 1 -->
+              <div class="project-square">
+                  <h4>Seawater</h4>
+                  <p>
+                    Created for <span class="hackathon">Global Gamers Challenge 2024</span>. 
+                  </p>
+                  <p>
+                    Flutter.
+                  </p>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-square">
+                  <h4>PointSwap</h4>
+                  <p>
+                    Created for <span class="hackathon">SCU Hack for Humanity 2023</span>. 
+                    A system for SCU students to swap meal points.
+                  </p>
+                  <p>
+                    HTML, CSS, JavaScript.
+                  </p>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-square">
+                  <h4>Tend</h4>
+                  <p>
+                    Created for <span class="hackathon">HackDavis 2020</span>. 
+                    An iOS mobile app for caregivers.
+                  </p>
+                  <p>
+                    Java, Swift.
+                  </p>
+              </div>
+          </div>
+
+        <div class="button-container">
+          <button id="toggleHackathons" class="toggleProjects hackathons">Show More</button>
+        </div>  
+      
+        <div class="project hackathons" style="display: none;">
+            <h4>Primordial Seawater???</h4>
+            <p>
+              Created for <span class="hackathon">Global Gamers Challenge 2024</span>. 
+            </p>
+            <p>
+              Flutter.
+            </p>
+              <!-- [Img embed] [Devpost *arrow*] [GitHub *arrow*] -->
+        </div>
         <div class="project hackathons" style="display: none;">
             <h4>PointSwap</h4>
             <p>
-              Created at <span class="hackathon">SCU Hack for Humanity 2023</span>. 
+              Created for <span class="hackathon">SCU Hack for Humanity 2023</span>. 
               A system for SCU students to swap meal points.
             </p>
             <p>
@@ -168,7 +311,7 @@
         <div class="project hackathons" style="display: none;">
             <h4>Tend</h4>
             <p>
-              Created at <span class="hackathon">HackDavis 2020</span>. 
+              Created for <span class="hackathon">HackDavis 2020</span>. 
               An iOS mobile app for caregivers.
             </p>
             <p>
