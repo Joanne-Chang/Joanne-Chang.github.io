@@ -45,6 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 project.style.display = 'none';
             }
         });
+      
+        var button = document.querySelector('.toggleProjects.' + sectionClass);
+        if (button.innerHTML === 'Show More') {
+          button.innerHTML = 'Hide';
+        } else {
+          button.innerHTML = 'Show More';
+        }
     }
 
     // Event listeners for each button
